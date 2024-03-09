@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./logo.png">
+        <title>Spotify - Web Player: Music for everyone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="sidebar">
+                <div class="nav">
+                    <div class="nav-option"style="opacity:1">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="nav-option">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+
+                            <!-- sidebarlibrary -->
+
+                <div class="library">
+                    <div class="option">
+                        <div class="lib-option nav-option">
+                            <img src="./assets/library_icon.png" alt="library">
+                            <a href="#">Your Library</a>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="lib-box">
+                        <div class="box">
+                            <p class="box-p1">Create your first playlist</p>
+                            <p class="box-p2">It's easy, we'll help you</p>
+                            <button class="badge ExplorePremium">create playlist</button>
+                        </div>
+                        <div class="box">
+                            <p class="box-p1">Let's find some podcast to follow</p>
+                            <p class="box-p2">We'll keep you updated on new episode</p>
+                            <button class="badge ExplorePremium">Browse podcast</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- mainbody -->
+            <div class="main-content">
+                <div class="sticky-nav">
+                    <div class="sticky-nav-icons">
+                        <img src="./assets/backward_icon.png"/>
+                        <img src="./assets/forward_icon.png " class="hide"/>
+                    </div>
+                    <div class="sticky-nav-options">
+                        <button class="badge nav-item hide ExplorePremium">Explore Premium</button>
+                        <button class="badge nav-item dark-badge ExplorePremium"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+                        <i class="fa-regular fa-bell notification"></i>
+                        <i class="fa-regular fa-user nav-item ExplorePremium"></i>
+                    </div>    
+                </div>
+                
+                 <!-- TRENDING NOW NEAR YOU -->
+                <h2>Trending now near you <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                        <div class="card">
+                            <img src="./assets/card2img.jpeg" class="card-img"/>
+                            <p class="card-title">Mahiye Jinna So...</p>
+                            <a href="#" class="card-info">2023. single</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/card3img.jpeg" class="card-img"/>
+                            <p class="card-title">Mere Paas Tum Ho...</p>
+                            <a href="#" class="card-info">Rahat Fateh Ali Khan</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/reco1.jpg.jpg" class="card-img"/>
+                            <p class="card-title">O Mahi(From...</p>
+                            <a href="#" class="card-info">Pritam, Arijit Singh</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/throwback7.jpg.jpg" class="card-img"/>
+                            <p class="card-title">Fanna</p>
+                            <a href="#" class="card-info">2006. Jatin-Lalit</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/reco2.jpg.jpeg" class="card-img"/>
+                            <p class="card-title">What Jhumka?</p>
+                            <a href="#" class="card-info">Pritam, Arijit Singh, Jonita Gandhi</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/card4img.jpeg" class="card-img"/>
+                            <p class="card-title">Na Ready(From...</p>
+                            <a href="#" class="card-info">2023. Single</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/manjha.jpg" class="card-img"/>
+                            <p class="card-title">Manjha</p>
+                            <a href="#" class="card-info">Vishal Mishra</a>
+                        </div>      
+                    </div>
+                <!-- THROWBACK -->
+                <h2>Throwback <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                        <div class="card">
+                            <img src="./assets/romance1.jpg" class="card-img"/>
+                            <p class="card-title">Om Shanti Om</p>
+                            <a href="#" class="card-info">Vishal-Shekhar</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/romance2.jpg" class="card-img"/>
+                            <p class="card-title">Jab We Met</p>
+                            <a href="#" class="card-info">Album. Various Artist</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/romance3.jpg" class="card-img"/>
+                            <p class="card-title">Rab Ne Bana Di...</p>
+                            <a href="#" class="card-info">Salim-Sulaiman</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/romance4.jpg" class="card-img"/>
+                            <p class="card-title">Jhoom Barabar...</p>
+                            <a href="#" class="card-info">Shankar-Ehsaan-Loy, KK...</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/romance5.jpg" class="card-img"/>
+                            <p class="card-title">Chameli</p>
+                            <a href="#" class="card-info">2003 .Sandesh Sandhilya...</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/throwback1.jpg.jpg" class="card-img"/>
+                            <p class="card-title">Kabhi Alvida Naa...</p>
+                            <a href="#" class="card-info">2006 .Shankar-Ehsaan-Loy</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/throwback2.jpg.jpg" class="card-img"/>
+                            <p class="card-title">Ajab Prem Ki Ghaz... </p>
+                            <a href="#" class="card-info">2009 .Pritam</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/throwback3.jpg.jpg" class="card-img"/>
+                            <p class="card-title">Bachna Ae Haseeno</p>
+                            <a href="#" class="card-info">2008. Vishal-Shekhar</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/throwback4.jpg.jpg" class="card-img"/>
+                            <p class="card-title">Jodhaa Akbar(Ori...</p>
+                            <a href="#" class="card-info">2007. A.R. Rahaman</a>
+                        </div>
+
+                </div>
+                <!-- RECOMENDED FOR TODAY -->
+                <h2>Recomended for today <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/papa.jpg" class="card-img"/>
+                        <p class="card-title">Tollywood Pearls</p>
+                        <a href="#" class="card-info">By Spotify</a>
+                    </div> 
+                    <div class="card">
+                        <img src="./assets/animal.jpg" class="card-img"/>
+                        <p class="card-title">Bollywood Central</p>
+                        <a href="#" class="card-info">By Spotify</a>
+                    </div> 
+                    <div class="card">
+                        <img src="./assets/throwback6.jpg.jpg" class="card-img"/>
+                        <p class="card-title">I Love You...Forever</p>
+                        <a href="#" class="card-info">2012 .Various Artist</a>
+                    </div> 
+                    <div class="card">
+                        <img src="./assets/throwback8.jpg.jpg" class="card-img"/>
+                        <p class="card-title">00's Love Hits</p>
+                        <a href="#" class="card-info">By Spotify</a>
+                    </div> 
+                </div>
+                <!-- PLAYLIST -->
+                <h2>Playlist <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/The Sound of Kolkata.jpg" class="card-img"/>
+                        <p class="card-title">The Sound of Kolk...</p>
+                        <a href="#" class="card-info">By The Sound of Spotify Places</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/The Sound of Mumbai.jpg" class="card-img"/>
+                        <p class="card-title">The Sound of Mumbai</p>
+                        <a href="#" class="card-info">By The Sound of Spotify Places</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/The Sound of Delhi.jpg" class="card-img"/>
+                        <p class="card-title">The Sound of Delhi</p>
+                        <a href="#" class="card-info">By The Sound of Spotify Places</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/The Sound of Chennai.jpg" class="card-img"/>
+                        <p class="card-title">The Sound of Chennai</p>
+                        <a href="#" class="card-info">By The Sound of Spotify Places</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/The Sound of Bengaluru.jpg" class="card-img"/>
+                        <p class="card-title">The Sound of Bengaluru</p>
+                        <a href="#" class="card-info">By The Sound of Spotify Places</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/The Sound of Hyderabad.jpg" class="card-img"/>
+                        <p class="card-title">The Sound of Hyderabad</p>
+                        <a href="#" class="card-info">By The Sound of Spotify Places</a>
+                    </div>
+                </div>
+                <!-- ALBUM -->
+                <h2>Album <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                        <div class="card">
+                            <img src="./assets/album2.jpg" class="card-img"/>
+                            <p class="card-title">This is Rahat Fateh...</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/album1.jpg" class="card-img"/>
+                            <p class="card-title">Kumar Sanu</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/alb1.jpg" class="card-img"/>
+                            <p class="card-title">Ghazal Mastero-J...</p>
+                            <a href="#" class="card-info">2017. Jagjit Singh</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/alb2.jpg" class="card-img"/>
+                            <p class="card-title">Lyrics by Javed Ak...</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                    </div>
+                    <!-- MADE FOR YOU -->
+                <h2>Made for you <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                        <div class="card">
+                            <img src="./assets/Today_s Top Hits.jpg" class="card-img"/>
+                            <p class="card-title">Today's Top Hits</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/made1.jpg" class="card-img"/>
+                            <p class="card-title">Release radar</p>
+                            <a href="#" class="card-info">By Big kay</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/made2.jpg" class="card-img"/>
+                            <p class="card-title">DAily Mix 1</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/made3.jpg" class="card-img"/>
+                            <p class="card-title">Punjabi 101</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                    </div>
+                <!-- MOOD -->
+                <h2>Mood <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                        <div class="card">
+                            <img src="./assets/Chill Hits.jpg" class="card-img"/>
+                            <p class="card-title">Chill Hits 2023</p>
+                            <a href="#" class="card-info">By Reingasapo</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/Workday Lounge.jpg" class="card-img"/>
+                            <p class="card-title">Workday Lounge</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/Instrumental Study.jpg" class="card-img"/>
+                            <p class="card-title">Instrumental Study</p>
+                            <a href="#" class="card-info">By mixstarrs</a>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/Reading Adventure.jpg" class="card-img"/>
+                            <p class="card-title">Reading Adventure</p>
+                            <a href="#" class="card-info">By Spotify</a>
+                        </div>
+                </div>
+                <!-- INSTRUMENTAL -->
+                <h2>Instrumental <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/Deep Focus.jpg" class="card-img"/>
+                        <p class="card-title">Deep Focus</p>
+                        <a href="#" class="card-info">By Good Vibes</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Instrumental Study.jpg" class="card-img"/>
+                        <p class="card-title">Instrumental Study</p>
+                        <a href="#" class="card-info">By mixstarrs</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Peaceful Piano.jpg" class="card-img"/>
+                        <p class="card-title">Peaceful Piano</p>
+                        <a href="#" class="card-info">By Spotify</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Beats to think to.jpg" class="card-img"/>
+                        <p class="card-title">Beats to think to</p>
+                        <a href="#" class="card-info">By Andre van Bossen</a>
+                    </div>
+                </div>
+                <!-- FEATURED CHART -->
+                <h2>Featured Charts <span class="show"><a>Show all</a></span></h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" class="card-img"/>
+                        <p class="card-title">Top Song - Global</p>
+                        <a href="#" class="card-info">Your weekly update of the most played tracks right now...</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" class="card-img"/>
+                        <p class="card-title">Top Songs - India</p>
+                        <a href="#" class="card-info">Your weekly update of the most played tracks right now...</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img"/>
+                        <p class="card-title">Top 50 - Global</p>
+                        <a href="#" class="card-info">Your daily updates of the most played...</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+                </div>   
+            <div class="music-player">
+                <div class="album">
+                    <img src="./assets/card3img.jpeg">
+                    <div class="play-song">
+                        <a href="#" class="play-song-title">Sanson Ki Mala</a>
+                        <a href="#" class="Artist">Rahat Fateh Ali Khan</a>
+                    </div>
+                    <div class="favourite">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player-controls">
+                        <img src="./assets/player_icon1.png" class="player-control-icon">
+                        <img src="./assets/player_icon2.png" class="player-control-icon">
+                        <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                        <img src="./assets/player_icon4.png" class="player-control-icon">
+                        <img src="./assets/player_icon5.png" class="player-control-icon">
+                    </div>
+                    <div class="playback-bar">
+                        <span class="curr-time">00.00</span>
+                        <input type="range" min="0" max="100" class="progress-bar" step="1">
+                        <span class="tot-time">3.33</span>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="extra-controls">
+                        <i class="fa-regular fa-square-caret-right" class="extra-control-icon"></i>
+                        <i class="fa-solid fa-music" class="extra-control-icon"></i>
+                        <i class="fa-solid fa-bars" class="extra-control-icon"></i>
+                        <i class="fa-solid fa-address-book" class="extra-control-icon"></i>
+                        <i class="fa-solid fa-volume-low" class="extra-control-icon" ></i>    
+                        <input type="range" class="volume">
+                        <i class="fa-solid fa-up-right-from-square" class="extra-control-icon"></i>
+                        <i class="fa-solid fa-up-right-and-down-left-from-center" class="extra-control-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
