@@ -1,2 +1,2 @@
 # Spotify-Clone
-Its my first project using HTML &amp; CSS
+Its my first project using HTML &amp; CSS.
